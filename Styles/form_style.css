@@ -1,0 +1,317 @@
+
+/*LOGIN/REGISTRATION FORM*/
+.form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    /*height: 440px;*/
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+@media (max-width: 425px){
+    .form{
+        width: 370px;
+    }
+}
+@media (max-width: 390px){
+    .form{
+        width: 320px;
+    }
+}
+@media (max-width: 320px){
+    .form{
+        width: 90vw;
+    }
+}
+.form .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: var(--accent-color);
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+    transition: 30ms ease-in-out;
+}
+.form .icon-close:hover{
+    color: #fc0000;
+    font-size: 2.3em;
+}
+.form .contents{
+    width: 500px;
+    padding: 10px;
+}
+.form h2{
+    font-size: 2em;
+    color: var(--accent-color);
+    text-align: center;
+}
+.form .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid var(--accent-color);
+    margin: 30px 0;
+}
+.form .input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: var(--accent-color);
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.2s;
+}
+.form .input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: var(--accent-color);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.form .input-box input:focus~label{
+    top: -5px;
+    font-size: 0.9em;
+}
+.form .input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: var(--accent-color);
+    line-height: 57px;
+}
+
+.remember-forgot {
+    font-size: 13px;
+    color: var(--accent-color);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.remember-forgot label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+.remember-forgot a {
+    color: calc(var(--accent-color) - 100);
+    text-decoration: none; 
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.form .form-btn {
+    width: 100%;
+    height: 45px;
+    background-color: var(--accent-color);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 600;
+}
+.login-register{
+    font-size: .9em;
+    color: var(--accent-color);
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a{
+    color: calc(var(--accent-color) - 500);
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+/*PAYMENT PLANS*/
+.payment-plan{
+    width: 700px;
+    height: 600px;
+    background-color: transparent;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    border: 2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-plan h2{
+    font-size: 2em;
+    color: var(--accent-color);
+}
+.payment-plan .content{
+    
+    padding: 10px;
+    color: var(--accent-color);
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.payment-plan table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 90%;
+}
+.payment-plan .content table th, td{
+    padding: 15px 5px;
+    text-align: center;
+    width: 100px;
+}
+.payment-plan .content table th.feature-col{
+    text-align: right;
+    padding-right: 10px;
+}
+.payment-plan .plan-btn{
+    width: 100%;
+    height: 45px;
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: .9em;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.payment-plan td:not(.btn) {
+    border-left: 2px solid var(--main-color);
+    padding: 8px;
+}
+@media (max-width: 768px)
+{
+    .payment-plan{
+        width: 500px;
+        height: 450px;
+    }
+    .payment-plan h2{
+        font-size: 1.8em;
+    }
+    .payment-plan .content{
+        font-size: 1.1em;
+        padding: 3px;
+    }
+    .payment-plan td:not(.btn) {
+        padding: 5px;
+    }
+    .payment-plan .content table th, td{
+        padding: 10px 3px;
+        text-align: center;
+        width: 100px;
+    }
+}
+@media (max-width: 550px){
+    .payment-plan{
+        width: 400px;
+        height: 380px;
+    }
+    .payment-plan h2{
+        font-size: 1.65em;
+    }
+    .payment-plan .content{
+        font-size: 1em;
+        padding: 0px;
+    }
+    .payment-plan td:not(.btn) {
+        padding: 0px;
+    }
+    .payment-plan .content table th, td{
+        padding: 10px 1px;
+        text-align: center;
+        width: 60px;
+    }
+    .payment-plan .plan-btn{
+        height: 35px;
+    }    
+}
+@media (max-width: 400px){
+    .payment-plan{
+        width: 90vw;
+        height: 88vw;
+    }
+    .payment-plan h2{
+        font-size: 6.5vw;
+    }
+    .payment-plan .content{
+        font-size: 3.9vw;
+        padding: 0px;
+    }
+    .payment-plan td:not(.btn) {
+        padding: 0px;
+    }
+    .payment-plan .content table th, td{
+        padding: 7px 1px;
+        text-align: center;
+        width: 30px;
+    }
+    .payment-plan .plan-btn{
+        height: 30px;
+        font: 0.8em;
+    } 
+}
+.error-msg{
+    width: 100%;
+    margin-top: -50px;
+    padding: 10px;
+}
+.error{
+    font-size: 13px;
+    font-style: italic;
+    color: red;
+    background-color: #eb8a8a2d;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 2px;
+}
+/*OVERLAY FILTER*/
+.overlay{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, #00000096 0%, #00000085 50%, #86868617 100%);
+    z-index: 100;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>CineFlicks - Register</title>
+    <link rel="icon" href="CineFlicks Brand Kit/CF.png">
+    <!--Styles-->
+    <link rel="stylesheet" href="Styles/home_style.css">
+    <link rel="stylesheet" href="Styles/form_style.css">
+    <!--CDN LINKS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://kit.fontawesome.com/627065df1a.js" crossorigin="anonymous"></script>
+   <!--JavaScript-->
+   <script src="Scripts/validate-form.js"></script>
+</head>
+<body>
+    <div class="main">
+<!--================================HEADER===========================-->
+        <!--CONTENT OF THE HEADER-->
+        <div class="header">
+            <nav>
+                <a href="home.html">
+                <img src="CineFlicks Brand Kit/CineFlicks glow.png" alt="CineFlicks Logo" class="logo">
+                </a>
+                <div>
+                    <button type="input" class="lang_btn">English<ion-icon name="chevron-down-outline"></ion-icon></button>
+                    <a href="login.html">
+                        <button class="button login-btn" type="input">Login</button>    
+                    </a>
+                </div>
+            </nav>
+        </div>
+                   <!--REGISTER FORM-->
+        <div class="form register-form">
+            <div class="content">
+                <h2>Register</h2>
+                <form id="register-form" action="payment_plan.html">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input name="fName" type="text" required>
+                        <label>First Name</label>
+                    </div>
+                    <div class="error-msg fName-error-message"></div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input name="lName" type="text" required>
+                        <label>Last Name</label>
+                    </div>
+                    <div class="error-msg lName-error-message"></div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input name="email" type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="error-msg email-error-message"></div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input name="password" type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="error-msg password-error-message"></div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input name="cPassword" type="password" required>
+                        <label>Confirm Password</label>
+                    </div>
+                    <div class="error-msg cPassword-error-message"></div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                    </div>
+                    <button type="submit" class="form-btn signup-form-btn">Signup</button>
+                    <div class="login-register">
+                        <p>Already have an  account? <a href="login.html" class="login-btn">Signin</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--PAYMENT PLANS
+        <div class="payment-plan">
+           
+            <div class="content">
+                <h2>Choose a payment plan</h2>
+                <table>
+                    <tr>
+                        <th class="feature-col"></th>
+                        <th>Basic</th>
+                        <th>Standard</th>
+                        <th>Premium</th>
+                    </tr>
+                    <tr>
+                        <th class="feature-col">Price</th>
+                        <td>$0.99</td>
+                        <td>$4.99</td>
+                        <td>$9.99</td>
+                    </tr>
+                    <tr>
+                        <th class="feature-col">Devices</th>
+                        <td>Upto 1</td>
+                        <td>Upto 2</td>
+                        <td>Upto 5</td>
+                    </tr>
+                    <tr>
+                        <th class="feature-col">Quality</th>
+                        <td>480p</td>
+                        <td>1080p</td>
+                        <td>2160p</td>
+                    </tr>
+                    <tr>
+                        <th class="feature-col">Mobile</th>
+                        <td><ion-icon name="checkmark"></ion-icon></td>
+                        <td><ion-icon name="checkmark"></ion-icon></td>
+                        <td><ion-icon name="checkmark"></ion-icon></td>
+                    </tr>
+                    <tr>
+                        <th class="feature-col">Computer</th>
+                        <td><ion-icon name="close"></ion-icon></td>
+                        <td><ion-icon name="checkmark"></ion-icon></td>
+                        <td><ion-icon name="checkmark"></ion-icon></td>
+                    </tr>
+                    <tr>
+                        <th class="feature-col">TV</th>
+                        <td><ion-icon name="close"></ion-icon></td>
+                        <td><ion-icon name="close"></ion-icon></td>
+                        <td><ion-icon name="checkmark"></ion-icon></td>
+                    </tr>
+                    <tr>
+                        <th class="feature-col"></th>
+                        <td class="btn"><button class="plan-btn basic-plan-btn">Choose</button></td>
+                        <td class="btn"><button class="plan-btn standard-plan-btn">Choose</button></td>
+                        <td class="btn"><button class="plan-btn premium-plan-btn">Choose</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>-->
+    </div> 
+    <style>
+        .copyright{
+            position: fixed;
+            text-align: center;
+            bottom: 0;
+            width: 100vw;
+        }
+    </style>
+    <div class="copyright"> &copy 2023 - all rights reserved CineFlicks</div>
+</body>
+
+
+</html>

@@ -1,0 +1,193 @@
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat');
+:root {
+    --max-width: 90%;
+    --main-color: #cf0a0a;
+    --main-color2: #140000;
+    --accent-color: #ffffff;
+    --accent-color2: #ffffffee;
+}
+*/
+.container{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    width: 1000px;
+    padding: 50px;
+    min-height: 515px;
+    margin: auto;
+    justify-content: center;
+}
+h2, th, td, input{
+    color: var(--accent-color);
+}
+/*CONTACT US FORM*/
+.container .form-container{
+    width: 60%;
+}
+.container .form{
+    width: 73%;
+}
+.form .name{
+    display: flex;
+    justify-content: space-between;
+}
+.fname, .lname{
+    width: 45%;
+    height: 50px;
+    margin: 30px 0;
+}
+.form .fname, .form .lname{
+    position: relative;
+    margin: 30px 0;
+}
+.form .fname label,
+.form .lname label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: var(--accent-color);
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.2s;
+}
+.form .fname input,
+.form .lname input{
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 35px 0 5px;
+    border-bottom: 2px solid var(--accent-color);
+}
+.form .email{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.form .email label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: var(--accent-color);
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.2s;
+}
+.form .input-box input:focus~label,
+.form .input-box input:valid~label{
+    top: -5px;
+}
+.form .email input{
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 35px 0 5px;
+    border-bottom: 2px solid var(--accent-color);
+}
+.form .input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: var(--accent-color);
+    line-height: 57px;
+}
+.form .message textarea{
+    resize: none;
+    width: 100%;
+    color: #000;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    outline: none;
+}
+.form .message {
+    display: flex;
+    margin: auto;
+}
+.form .form-btn {
+    width: 20%;
+    height: 45px;
+    background-color: var(--accent-color);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 600;
+}
+/*CONTACT INFO*/
+.container .information{
+    padding: 1%;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.336);
+}
+td, th{
+    padding: 0 5% 5% 0;
+}
+td{
+    text-align: left;
+}
+th{
+    text-align: right;
+}
+
+@media (max-width: 1366px)
+{
+    .container{
+        width: 900px;
+    }
+    h2{
+        font-size: 23px;
+    }
+    th, td{
+        font-size: 14px;
+    }
+    .container .form{
+    width: 80%;
+    }
+    label{
+        font-size: 16px;
+    }
+    
+}
+@media (max-width: 1080px){
+    .container{
+        width: 750px;
+    }
+    h2{
+        font-size: 21px;
+    }
+    th, td{
+        font-size: 12px;
+    }
+    .container .form{
+        width: 90%;
+    }
+    label{
+        font-size: 14px;
+    }
+
+}
+@media (max-width: 900px) {
+    .information{
+        display: none;
+    }
+    .container{
+        width: 600px;
+    }
+}
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+}
